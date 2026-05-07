@@ -36,6 +36,10 @@ export const Route = createRootRouteWithContext()({
       { href: styleCss, rel: "stylesheet" },
       ...(useRuntime ? [{ href: "/virtual:stylex.css", rek: "stylesheet" }] : []),
     ],
+    meta: [
+      { charset: "utf8" },
+      { content: "width=device-width,initial-scale=1", name: "viewport" },
+    ],
   }),
   shellComponent: RootComponent,
 });

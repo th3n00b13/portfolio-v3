@@ -1,0 +1,9 @@
+pre-commit:
+  parallel: false
+  commands:
+    fmt:
+      glob: "**/*.{js,jsx,ts,tsx,json,css,scss,md,json,jsonc,json5,yml,yaml,toml,html}"
+      run: bun fmt
+    check:
+      glob: "**/*.{js,jsx,ts,tsx}"
+      run: bun lint-strict --fix {staged_files}

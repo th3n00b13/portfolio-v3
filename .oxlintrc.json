@@ -1,0 +1,41 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["unicorn", "oxc", "import", "promise", "jsdoc", "jsx-a11y", "typescript"],
+  "categories": {
+    "correctness": "warn",
+    "nursery": "error",
+    "suspicious": "error",
+    "perf": "warn",
+    "style": "warn",
+    "pedantic": "allow",
+    "restriction": "allow"
+  },
+  "options": {
+    "typeAware": true
+  },
+  "rules": {
+    "typescript/no-explicit-any": "deny",
+    "import/no-namespace": "allow",
+    "import/no-named-export": "allow",
+    "import/group-exports": "allow",
+    "eslint/no-ternary": "allow",
+    "import/prefer-default-export": "allow",
+    "eslint/sort-imports": "allow"
+  },
+  "settings": {
+    "jsx-a11y": {
+      "components": {},
+      "attributes": {}
+    },
+    "jsdoc": {
+      "ignorePrivate": false,
+      "ignoreInternal": false,
+      "ignoreReplacesDocs": true,
+      "overrideReplacesDocs": true,
+      "augmentsExtendsReplacesDocs": false,
+      "implementsReplacesDocs": false,
+      "exemptDestructuredRootsFromChecks": false,
+      "tagNamePreference": {}
+    }
+  }
+}

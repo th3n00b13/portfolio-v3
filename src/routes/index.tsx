@@ -10,10 +10,8 @@ const styles = stylex.create({
 
 const Home = () => (
   <div {...stylex.props(styles.container)}>
-    <h1>Welcome to TanStack Start</h1>
-    <p>
-      Edit <code>src/routes/index.tsx</code> to get started.
-    </p>
+    <h1>ポートフォリオ(仮)</h1>
+    <p>まだ基盤を作っただけなので何もありません</p>
   </div>
 );
 
